@@ -1,0 +1,70 @@
+{
+    "settings": {
+        "colours": {
+            "base2": "#0071F9",
+            "settingBtnBg": "#0071F9",
+            "overlayHighlightFg": "#0071F9"
+        },
+        "general": {
+            "culture": "{fe.cultureCode}",
+            "audioSelectionMethod": "title",
+            "closedCaptionSelectionMethod": "lang",
+            "backgroundImage": "",
+            "isCommentaryBadgeVisible": true,
+            "isCommentaryFilteredByChapter": false,
+            "isMiddleTimelineEventsLineEnabled": false,
+            "isMultiViewModeSwitchEnabled": false,
+            "isTimelineEventsVisibleWithCommentaryOpen": true,
+            "isVideoThumbnailPreviewEnabled": false,
+            "isEndOfPlayEnabled": false,
+            "jumpLargeGaps": false,
+            "liveBackOff": 1000,
+            "pipMode": false,
+            "relevantCommentaryStartsVisible": false,
+            "resolveManifestUrl": false,
+            "smallGapLimit": 5,
+            "trackVideoDataManifest": false,
+            "videoAnalyticsEventFrequency": 30000
+        },
+        "mediaTracking": {
+            "type": "conviva",
+            "setting4": "AKAMAI",
+            "setting5": "d93c6d932d7fd56ae2477a08bcb2f53b6cc56a93",
+            "setting6": "{p.platform} - {p.device}",
+            "setting7": "{Settings.cs5}",
+            "setting8": "{n:v.title}",
+            "setting9": "{n:Settings.cs9};v_video_provider={v.source.origin}"
+        }
+    },
+    "translations": {
+        "vocabularySource": "https://divafe-tst.tod.tv/diva5/dictionaries/{fe.cultureCode}.json"
+    },
+    "videoData": {
+        "videoDataPath": "https://feedpublisher-tst.tod.tv/divauni/BEIN/fe/video/videodata/v2/{v.id}",
+        "videoDataPollingInterval": 20000,
+        "videoPlatformsPriority": {
+            "default": [
+                {
+                    "type": "DASH",
+                    "sourceName": "Connected-TV-DASH",
+                    "drmType": "widevine"
+                }
+            ]
+        }
+    },
+    "entitlementCheck": {
+        "entitlementUrl": "https://entitlement-tst.tod.tv/entitlement/api/video/{v.source.origin}/diva/open",
+        "heartbeatUrl": "https://heartbeat-tst.tod.tv/video-session/api/video/diva/heartbeat",
+        "heartbeatPollingInterval": 180000,
+        "other": "{Run.SessionID}|{p.platform}|{p.platform}_{p.device}|{Settings.cs10}|{Settings.cs5}"
+    },
+    "mediaAnalytics": {
+        "conviva": {
+            "enabled": false,
+            "customerKey": "d93c6d932d7fd56ae2477a08bcb2f53b6cc56a93",
+            "playerName": "Diva",
+            "cdnName": "Akamai",
+            "touchstoneUrl": "https://beinsports-test.testonly.conviva.com"
+        }
+    }
+}
