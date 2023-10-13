@@ -1,1 +1,1 @@
-# testJson
+# duplicating diva config
