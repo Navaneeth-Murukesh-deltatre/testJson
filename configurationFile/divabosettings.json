@@ -62,7 +62,7 @@
         "conviva": {
             "enabled": true,
             "customerKey": "d93c6d932d7fd56ae2477a08bcb2f53b6cc56a93",
-            "playerName": "Diva",
+            "playerName": "Diva-test-pn",
             "cdnName": "Akamai",
             "touchstoneUrl": "https://beinsports-test.testonly.conviva.com"
         }
